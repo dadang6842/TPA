@@ -2,7 +2,7 @@
 
 This folder contains the dataset generation scripts used to create synthetic transition segments for **Human Activity Recognition (HAR)** benchmark datasets (UCI-HAR, WISDM, and PAMAP2) using the Sequence Splitting method.
 
-
+***
 
 ## Reproducibility Notice (Random Seed)
 
@@ -14,7 +14,7 @@ To reproduce the quantitative results(performance metrics) stated in the final p
 
 **https://drive.google.com/drive/folders/1_SfYaRQ4B7xLBtiUS5BEAEq7rhuNRKa6?usp=sharing**
 
-
+***
 
 ## Execution (Terminal Commands)
 
