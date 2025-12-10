@@ -54,10 +54,10 @@ pip install -r requirements.txt
 
 ## Codebase Overview
 
--   `models/tpa_modules.py` - Implementation of the core **Temporal Prototype Attention (TPA)** module.
--   `models/cnn_tpa_models.py` - **CNN Backbone Models**. This file defines the `MultiPathCNN` (a multi-scale temporal feature extractor) and three end-to-end models: `GAPModel` (CNN+GAP), `TPAModel` (CNN+TPA), and `GatedTPAModel` (CNN+Gated-TPA). |
--   `models/lstm_tpa_models.py` - **LSTM Backbone Models**. This file defines the `BiLSTMBackbone` (bidirectional LSTM) and the corresponding three end-to-end models built upon the LSTM feature extractor.
--   `models/transformer_tpa_models.py`- **Transformer Backbone Models**. This file defines the `TransformerBackbone` (Transformer Encoder with Positional Encoding) and the corresponding three end-to-end models utilizing the Transformer feature extractor.
+-   `models/tpa_module.py` - Implementation of the core **Temporal Prototype Attention (TPA)** module.
+-   `models/cnn_tpa_models.py` - **CNN Backbone Models**. This file defines the `MultiPathCNN` (a multi-scale temporal feature extractor) and three classification models based on a Backbone-Head Architecture: `GAPModel` (CNN+GAP), `TPAModel` (CNN+TPA), and `GatedTPAModel` (CNN+Gated-TPA).
+-   `models/lstm_tpa_models.py` - **LSTM Backbone Models**. This file defines the `BiLSTMBackbone` (bidirectional LSTM) and the corresponding three classification models based on a Backbone-Head Architecture.
+-   `models/transformer_tpa_models.py` - **Transformer Backbone Models**. This file defines the `TransformerBackbone` (Transformer Encoder with Positional Encoding) and the corresponding three classification models based on a Backbone-Head Architecture.
 
 ## Citing this Repository
 
