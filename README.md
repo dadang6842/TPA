@@ -58,6 +58,8 @@ pip install -r requirements.txt
 -   `models/cnn_tpa_models.py` - **CNN Backbone Models**. This file defines the `MultiPathCNN` (a multi-scale temporal feature extractor) and three classification models based on a Backbone-Head Architecture: `GAPModel` (CNN+GAP), `TPAModel` (CNN+TPA), and `GatedTPAModel` (CNN+Gated-TPA).
 -   `models/lstm_tpa_models.py` - **LSTM Backbone Models**. This file defines the `BiLSTMBackbone` (bidirectional LSTM) and the corresponding three classification models based on a Backbone-Head Architecture.
 -   `models/transformer_tpa_models.py` - **Transformer Backbone Models**. This file defines the `TransformerBackbone` (Transformer Encoder with Positional Encoding) and the corresponding three classification models based on a Backbone-Head Architecture.
+-   `transition_generator.py` - **Synthetic Transition Augmentation**. Implements the generation of activity transition windows by concatenating segments from two different classes ($X_A$ and $X_B$) based on specific mixing ratios (e.g., 0.1, 0.2)
+-   `perturbations.py` - **Data Perturbation**. Provides various methods to apply synthetic variations to time-series data, including temporal scaling, additive Gaussian noise, bias drift, and multiplicative scale drift.
 
 ## Citing this Repository
 
